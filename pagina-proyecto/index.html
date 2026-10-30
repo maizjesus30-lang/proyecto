@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecos del Pasado | Comunidad de San Francisco 1, Cumaná</title>
+    <meta name="description" content="Historia, lugares y relatos de la Comunidad de San Francisco 1, en Cumaná, estado Sucre.">
+    <meta name="theme-color" content="#1b365d">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Titulo central-->
+    <header class="header1">
+        <nav class="navs" aria-label="Principal">
+            <a class="logo" href="index.html"><img class="logo-img" src="img/logo.svg" alt="">Ecos del <span>Pasado</span></a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-links">
+                <li class="dropdown"><a href="index.html">Inicio ▾</a>
+                    <ul class="submenu">
+                        <li><a href="index.html#bienvenida">Bienvenida</a></li>
+                        <li><a href="index.html#historia">Historia</a></li>
+                        <li><a href="index.html#atractivos">Lugares</a></li>
+                        <li><a href="index.html#personajes">Personajes</a></li>
+                        <li><a href="index.html#ubicacion">Ubicación</a></li>
+                        <li><a href="index.html#cultura">Cultura</a></li>
+                        <li><a href="index.html#galeria">Galería</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Lugares ▾</a>
+                    <ul class="submenu">
+                        <li><a href="Lugares/castillo.html">Castillo San Antonio</a></li>
+                        <li><a href="Lugares/basilica.html">Basílica Menor de Santa Inés</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Hechos y Relatos ▾</a>
+                    <ul class="submenu">
+                        <li><a href="HechosRelatos/jose-ribero.html">José Ribero</a></li>
+                    </ul>
+                </li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="opiniones.html">Opiniones</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!--Contenido principal-->
+    <main>
+                            <!--Seccion de bienvenida-->
+        <!--carrusel de imágenes-->
+        <section id="hero" class="hero-moderno">
+            <div class="carrusel-bg">
+                <div class="carrousel-slide">
+                    <img src="img/portada1.jpg" alt="Portada San Francisco">
+                    <img src="img/portada2.jpg" alt="Paisaje 2">
+                    <img src="img/portada3.jpg" alt="Paisaje 3">
+                    <img src="img/portada4.jpg" alt="Paisaje 4">
+                </div>
+                <div class="overlay-hero"></div>
+            </div>
+
+        <!--Titulo central-->
+            <div class="contenido-hero">
+                <div class="hero-texto-caja">
+                    <span class="hero-tag">Ecos del Pasado</span>
+                    <h1 class="titulo-principal">Comunidad de <span class="resalto-oro">San Francisco</span></h1>
+                    <p class="subtitulo-principal">Un viaje a través del tiempo en el corazón de nuestra historia.</p>
+                    <a href="#bienvenida" class="btn-primario">Descubre Nuestra Historia <i class="fas fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de bienvenida-->
+        <section id="bienvenida" class="seccion-bienvenida container-seccion">
+            <div class="grid-2-columnas alineacion-centro">
+                <div class="collage-bienvenida">
+                    <img loading="lazy" src="img/portada.jpg" alt="Vista 1" class="img-collage img-principal">
+                    <img loading="lazy" src="img/ubicacion.jpg" alt="Vista 2" class="img-collage img-secundaria">
+                    <div class="insignia-experiencia">
+                        <span>370+</span>
+                        <p>Años</p>
+                    </div>
+                </div>
+                <div class="texto-bienvenida">
+                    <span class="etiqueta-seccion">Conoce Nuestro Hogar</span>
+                    <h2>Bienvenidos a <br><span class="resalto-oro">San Francisco</span></h2>
+                    <div class="linea-decorativa-izquierda"></div>
+                    <p class="texto-destacado-moderno">San Francisco no es solo un lugar en el mapa, es una memoria viva que respira a través de sus calles empedradas, la calidez de su gente y sus tradiciones inquebrantables.</p>
+                    <p class="texto-historia-p mt-3">Te abrimos las puertas de nuestra comunidad para que descubras cada rincón que ha sido testigo de épocas doradas, forjadores de nuestra nación y milagros inexplicables.</p>
+                    
+                    <ul class="lista-bienvenida mt-3">
+                        <li><i class="fas fa-landmark text-oro"></i> Descubre monumentos centenarios</li>
+                        <li><i class="fas fa-book-open text-oro"></i> Lee crónicas y relatos inéditos</li>
+                        <li><i class="fas fa-camera-retro text-oro"></i> Maravíllate con nuestros paisajes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de estadisticas-->
+        <section class="seccion-estadisticas">
+            <div class="container-seccion" style="padding: 3rem 2rem;">
+                <div class="grid-4-columnas">
+                    <div class="stat-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3 class="contador">1651</h3>
+                        <p>Año de Fundación</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-monument"></i>
+                        <h3 class="contador">3+</h3>
+                        <p>Monumentos</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-map-marked"></i>
+                        <h3 class="contador">5+</h3>
+                        <p>Calles Históricas</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-heart"></i>
+                        <h3 class="contador">100%</h3>
+                        <p>Orgullo Cumanés</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!--Seccion de historia-->
+        <section id="historia" class="seccion-historia bg-claro">
+            <div class="container-seccion">
+                <div class="grid-2-columnas alineacion-centro">
+                    <div class="texto-historia">
+                        <span class="etiqueta-seccion">Nuestras Raíces</span>
+                        <h2>El Origen de San Francisco</h2>
+                        <div class="linea-decorativa-izquierda"></div>
+                        <p class="texto-historia-p">Nuestra comunidad nació y creció rodeada de monumentos inmortales: el Convento San Francisco, el Río Manzanares y los imponentes Castillos de Santa María de la Cabeza y San Antonio de la Eminencia. La fecha aproximada de su establecimiento data de la reconstrucción del Convento de San Francisco y la Cédula Real del 25 de marzo de 1651.</p>
+                        <p class="texto-historia-p mt-2">Sus pintorescas calles—Urica, Luneta, Las Flores, Santa María, Sucre y Cementerio (hoy Badaracco Bermúdez)—han sido cuna y jardín de ilustres personajes y acontecimientos particulares que forjaron la identidad de nuestra región.</p>
+                    </div>
+                    <div class="imagen-contenedor">
+                        <img loading="lazy" src="img/historia.jpg" alt="Historia de San Francisco" class="img-fluida img-sombra borde-redondeado">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!--Dicho-->
+        <section class="seccion-cita">
+            <div class="overlay-cita"></div>
+            <div class="container-seccion contenido-cita text-center">
+                <i class="fas fa-quote-left icono-comilla"></i>
+                <blockquote>"Un pueblo sin el conocimiento de su historia, origen y cultura es como un árbol sin raíces. Preservar San Francisco es preservar el alma de Cumaná."</blockquote>
+            </div>
+        </section>
+
+        <!--Seccion de Lugares -->
+        <section id="atractivos" class="seccion-tarjetas container-seccion">
+            <div class="header-seccion text-center">
+                <h2>Lugares Emblemáticos</h2>
+                <div class="linea-decorativa"></div>
+                <p class="subtitulo-seccion">Descubre los rincones que guardan los secretos de nuestros antepasados.</p>
+            </div>
+            <div class="grid-3-columnas">
+                <div class="tarjeta-lugar">
+                    <div class="icono-lugar"><i class="fas fa-monument"></i></div>
+                    <h3>Plazas Históricas</h3>
+                    <p>Las plazas San Francisco (hoy Ribero) y Quetepe han sido el centro de encuentro de generaciones y guardianes de nuestra memoria.</p>
+                </div>
+                <div class="tarjeta-lugar">
+                    <div class="icono-lugar"><i class="fas fa-road"></i></div>
+                    <h3>Calles Pintorescas</h3>
+                    <p>Recorre la calle Úrica o Luneta, donde el tiempo parece haberse detenido, mostrando la arquitectura y la vida tradicional.</p>
+                </div>
+                <div class="tarjeta-lugar">
+                    <div class="icono-lugar"><i class="fas fa-chess-rook"></i></div>
+                    <h3>Castillos y Conventos</h3>
+                    <p>Monumentos inmortales de piedra que vigilan la comunidad y cuentan historias de antiguas batallas, fe y resiliencia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de personajes y hechos-->
+        <section id="personajes" class="seccion-personajes bg-oscuro-textura">
+            <div class="container-seccion">
+                <div class="header-seccion text-center color-blanco">
+                    <h2>Forjadores y Leyendas</h2>
+                    <div class="linea-decorativa"></div>
+                </div>
+                <div class="grid-2-columnas">
+                    <div class="caja-info-clara">
+                        <h3><i class="fas fa-users text-oro"></i> Personajes Ilustres</h3>
+                        <p>La calle Úrica vio nacer al <strong>General Domingo Montes</strong> en 1784, héroe militar clave junto a figuras como José Francisco Bermúdez y Antonio José de Sucre.</p>
+                        <p>También es la cuna del <strong>Dr. Jesús Sanabria Bruzual</strong> (cofundador de la Sociedad Médica) y <strong>Don José Acuña</strong>, periodista fundador del periódico “Renacimiento”.</p>
+                    </div>
+                    <div class="caja-info-destacada">
+                        <h3><i class="fas fa-hands-praying"></i> "La Mano de Dios"</h3>
+                        <p>El 17 de enero de 1929, un devastador terremoto de magnitud 7° destruyó gran parte de Cumaná, incluyendo teatros, iglesias y castillos.</p>
+                        <p>Milagrosamente, la <strong>calle Las Flores</strong> en San Francisco no sufrió daños. Sus casas permanecieron intactas, un suceso tan extraordinario que desde entonces se le conoce como la calle protegida por "La mano de Dios".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de ubicacion-->
+        <section id="ubicacion" class="seccion-ubicacion bg-claro">
+            <div class="container-seccion">
+                <div class="grid-2-columnas reversa alineacion-centro">
+                    <div class="texto-ubicacion">
+                        <span class="etiqueta-seccion">Dónde Estamos</span>
+                        <h2>Ubicación Privilegiada</h2>
+                        <div class="linea-decorativa-izquierda"></div>
+                        <p class="texto-historia-p">La Comunidad de San Francisco goza de una posición geográfica estratégica que ha favorecido históricamente nuestro desarrollo social, cultural y económico.</p>
+                        <ul class="lista-beneficios">
+                            <li><i class="fas fa-check-circle text-oro"></i> <strong>Conexión Total:</strong> Acceso a vías principales y sectores aledaños.</li>
+                            <li><i class="fas fa-check-circle text-oro"></i> <strong>Clima y Relieve:</strong> Entorno que enriquece nuestra vida diaria y agricultura.</li>
+                            <li><i class="fas fa-check-circle text-oro"></i> <strong>Desarrollo:</strong> Facilidad de intercambio comercial, cultural y acceso a servicios.</li>
+                        </ul>
+                    </div>
+                    <div class="imagen-contenedor">
+                        <img loading="lazy" src="img/ubicacion.jpg" alt="Ubicación Geográfica" class="img-fluida img-sombra borde-redondeado">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de cultura y tradiciones-->
+        <section id="cultura" class="seccion-cultura">
+            <div class="container-seccion text-center">
+                <div class="header-seccion">
+                    <span class="etiqueta-seccion">Nuestra Esencia</span>
+                    <h2>Cultura y Tradición</h2>
+                    <div class="linea-decorativa"></div>
+                </div>
+                <div class="grid-3-columnas">
+                    <div class="cultura-card">
+                        <div class="cultura-img">
+                            <img loading="lazy" src="img/santaines.jpg" alt="Basílica de Santa Inés">
+                        </div>
+                        <div class="cultura-info">
+                            <h3>Fervor Religioso</h3>
+                            <p>La devoción en la Basílica y el Convento marcan el ritmo espiritual de nuestras calles a lo largo de los años.</p>
+                        </div>
+                    </div>
+                    <div class="cultura-card">
+                        <div class="cultura-img">
+                            <img loading="lazy" src="img/castillo-6.jpg" alt="Arquitectura colonial: Castillo San Antonio">
+                        </div>
+                        <div class="cultura-info">
+                            <h3>Arquitectura Colonial</h3>
+                            <p>Fachadas coloridas y techos altos que han resistido el paso de los siglos y embellecen la visual urbana.</p>
+                        </div>
+                    </div>
+                    <div class="cultura-card">
+                        <div class="cultura-img">
+                            <img loading="lazy" src="img/folclore.jpg" alt="Folclore y vida en comunidad">
+                        </div>
+                        <div class="cultura-info">
+                            <h3>Vida en Comunidad</h3>
+                            <p>El calor de nuestra gente, las historias de los abuelos y las tradiciones orales que nunca mueren.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de galeria-->
+        <section id="galeria" class="seccion-galeria bg-claro">
+            <div class="container-seccion text-center">
+                <div class="header-seccion">
+                    <span class="etiqueta-seccion">Nuestro Entorno</span>
+                    <h2>Galería Visual</h2>
+                    <div class="linea-decorativa"></div>
+                </div>
+                <div class="galeria-masonry">
+                    <div class="galeria-item imagen-contenedor"><img loading="lazy" src="img/portada.jpg" alt="Vista de la comunidad de San Francisco"></div>
+                    <div class="galeria-item imagen-contenedor"><img loading="lazy" src="img/castillo-6.jpg" alt="Entrada del Castillo San Antonio"></div>
+                    <div class="galeria-item imagen-contenedor"><img loading="lazy" src="img/basilica.jpg" alt="Interior de la Basílica de Santa Inés"></div>
+                    <div class="galeria-item imagen-contenedor"><img loading="lazy" src="img/galeria-2.jpg" alt="Paisaje de San Francisco"></div>
+                    <div class="galeria-item imagen-contenedor galeria-item-ancho"><img loading="lazy" src="img/patronales.jpg" alt="Fiestas patronales de Santa Inés"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de CTA-->
+        <section class="seccion-cta bg-oscuro-textura text-center">
+            <div class="container-seccion" style="padding: 6rem 2rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: white;">¿Listo para adentrarte en el pasado?</h2>
+                <p style="font-size: 1.2rem; color: #ddd; max-width: 600px; margin: 0 auto 2.5rem;">Explora a fondo los relatos, personajes y monumentos que hacen de San Francisco un lugar inolvidable.</p>
+                <div class="botones-cta">
+                    <a href="Lugares/castillo.html" class="btn-primario">Visitar Lugares</a>
+                    <a href="HechosRelatos/jose-ribero.html" class="btn-secundario">Leer Relatos</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Pie de pagina-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box"><figure><a href="index.html"><img loading="lazy" src="img/logo.svg" alt="Ecos del Pasado"></a></figure></div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Creado por Estudiantes de la UPTOS</p>
+                <p>Jesús Maiz, Jesús Garcia, Jesús Carrera, Miguel Pulido</p>
+                <p>Comunidad de San Francisco 1, Cumaná, estado Sucre</p>
+            </div>
+            <!-- Cuando la comunidad tenga redes sociales, agregar aquí sus enlaces reales -->
+            <div class="box">
+                <h2>EXPLORA</h2>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Lugares/castillo.html">Castillo San Antonio</a></li>
+                    <li><a href="Lugares/basilica.html">Basílica de Santa Inés</a></li>
+                    <li><a href="HechosRelatos/jose-ribero.html">Hechos y Relatos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="opiniones.html">Opiniones</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-fullscreen" class="modal-full">
+        <span id="cerrar-modal" class="cerrar">&times;</span>
+        <img class="imagen-expandida" id="foto-grande" src="">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Pon aqui las fotos de la pagina Nosotros (equipo, bocetos, codigo, versiones y visitas a la comunidad).
+Usa nombres sin espacios ni tildes, por ejemplo: boceto-1.jpg, visita-comunidad-2.jpg.
+Antes de subirlas, reducelas a menos de 500 KB cada una (por ejemplo en squoosh.app).

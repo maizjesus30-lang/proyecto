@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Ecos del Pasado</title>
+    <meta name="description" content="Organizaciones, logros, comercios y economía local de la Comunidad de San Francisco 1, Cumaná.">
+    <meta name="theme-color" content="#1b365d">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header1">
+        <nav class="navs" aria-label="Principal">
+            <a class="logo" href="index.html"><img class="logo-img" src="img/logo.svg" alt="">Ecos del <span>Pasado</span></a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-links">
+                <li class="dropdown"><a href="index.html">Inicio ▾</a>
+                    <ul class="submenu">
+                        <li><a href="index.html#bienvenida">Bienvenida</a></li>
+                        <li><a href="index.html#historia">Historia</a></li>
+                        <li><a href="index.html#atractivos">Lugares</a></li>
+                        <li><a href="index.html#personajes">Personajes</a></li>
+                        <li><a href="index.html#ubicacion">Ubicación</a></li>
+                        <li><a href="index.html#cultura">Cultura</a></li>
+                        <li><a href="index.html#galeria">Galería</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Lugares ▾</a>
+                    <ul class="submenu">
+                        <li><a href="Lugares/castillo.html">Castillo San Antonio</a></li>
+                        <li><a href="Lugares/basilica.html">Basílica Menor de Santa Inés</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Hechos y Relatos ▾</a>
+                    <ul class="submenu">
+                        <li><a href="HechosRelatos/jose-ribero.html">José Ribero</a></li>
+                    </ul>
+                </li>
+                <li><a class="activo" href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="opiniones.html">Opiniones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Portada de la página. Para cambiar la foto de fondo, cambia img/portada3.jpg por otra foto de la carpeta img -->
+        <section class="hero-pagina" style="background-image:linear-gradient(rgba(15,30,50,.75),rgba(2,2,2,.85)),url('img/portada3.jpg')">
+            <h1>Servicios</h1>
+            <p>Organizaciones, logros y economía de la comunidad</p>
+        </section>
+        <section class="">
+            <div class="container-seccion">
+                <div class="header-seccion text-center"><h2>Organizaciones e instituciones</h2><div class="linea-decorativa"></div>
+                    <p class="subtitulo-seccion">Presentes en el sector de San Francisco 1.</p></div>
+                <!-- PARA AGREGAR UNA ORGANIZACIÓN: copia un bloque completo &lt;article class=&quot;servicio-card&quot;&gt; ... &lt;/article&gt; y cambia el nombre (&lt;h3&gt;). El icono se cambia en fa-xxxx (busca iconos en fontawesome.com/icons). Para una descripción, agrega &lt;p&gt;texto&lt;/p&gt; debajo del &lt;h3&gt;. -->
+                <div class="servicios-grid compacta">
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-people-group"></i></div>
+                    <h3>Casa de la Diversidad</h3>
+                </article>
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-palette"></i></div>
+                    <h3>Gabinete Cultural</h3>
+                </article>
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-house-chimney"></i></div>
+                    <h3>Hogar Azul</h3>
+                </article>
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Instituto Formaciones Diversas</h3>
+                </article>
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-landmark"></i></div>
+                    <h3>La Prefectura</h3>
+                </article>
+                <article class="servicio-card ancho">
+                    <div class="servicio-icono"><i class="fas fa-users"></i></div>
+                    <h3>Consejo Comunal</h3>
+                    <p>Cuenta con mesas técnicas y comités de trabajo en estas áreas:</p>
+                    <div class="etiquetas"><span class="etiqueta">Alimentación</span><span class="etiqueta">Agua</span><span class="etiqueta">Salud</span><span class="etiqueta">Energía</span><span class="etiqueta">Gas</span><span class="etiqueta">Juventud y Deportes</span></div>
+                </article>
+                </div>
+            </div>
+        </section>
+        <section class="bg-claro">
+            <div class="container-seccion">
+                <div class="header-seccion text-center"><h2>Servicios y logros</h2><div class="linea-decorativa"></div>
+                    <p class="subtitulo-seccion">Lo que la comunidad ha alcanzado y lo que sigue en camino.</p></div>
+                <!-- Para agregar un logro: copia un bloque &lt;article&gt; completo. La etiqueta amarilla (&lt;span class=&quot;insignia&quot;&gt;) es opcional: bórrala si no la necesitas. -->
+                <div class="servicios-grid">
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-heart-pulse"></i></div>
+                    <h3>Atención a la salud</h3>
+                    <p>La atención a la salud figura entre los logros de la comunidad.</p>
+                </article>
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-house"></i></div>
+                    <h3>Casa Comunal</h3>
+                    <p>La Casa Comunal está indicada como una obra incompleta.</p>
+                    <span class="insignia">Incompleta</span>
+                </article>
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-route"></i></div>
+                    <h3>Corredor y ruta turística certificada</h3>
+                    <p>Con embellecimiento de las calles y del centro histórico.</p>
+                </article>
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-award"></i></div>
+                    <h3>Certificación Culturales</h3>
+                    <p>La comunidad cuenta con la Certificación Culturales (2005).</p>
+                </article>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <div class="container-seccion">
+                <div class="header-seccion text-center"><h2>Comercio y economía local</h2><div class="linea-decorativa"></div>
+                    <p class="subtitulo-seccion">Los negocios y actividades que mueven a San Francisco 1.</p></div>
+                <!-- Cada etiqueta redondeada es un &lt;span class=&quot;etiqueta&quot;&gt;. Para agregar una, copia una línea de etiqueta y cambia el texto. -->
+                <div class="servicios-grid">
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-store"></i></div>
+                    <h3>Comercios y servicios del turismo</h3>
+                    <p>Negocios vinculados a la actividad turística de la comunidad:</p>
+                    <div class="etiquetas"><span class="etiqueta">Tiendas</span><span class="etiqueta">Bodegas</span><span class="etiqueta">Hospedajes</span></div>
+                </article>
+                <article class="servicio-card">
+                    <div class="servicio-icono"><i class="fas fa-coins"></i></div>
+                    <h3>Economía local</h3>
+                    <p>La economía de San Francisco 1 se sostiene con:</p>
+                    <div class="etiquetas"><span class="etiqueta">Pequeños negocios</span><span class="etiqueta">Ventas caseras</span><span class="etiqueta">Servicios por cuenta propia</span><span class="etiqueta">Pesca artesanal</span></div>
+                </article>
+                </div>
+            </div>
+        </section>
+        <section class="bg-claro">
+            <div class="container-seccion text-center">
+                <div class="header-seccion text-center"><h2>¿Falta algún servicio u organización?</h2><div class="linea-decorativa"></div>
+                    <p class="subtitulo-seccion">Si conoces algo que debería aparecer aquí, cuéntanos y lo revisamos.</p></div>
+                <a href="opiniones.html" class="btn-primario sin-animacion">Dejar mi opinión</a>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box"><figure><a href="index.html"><img loading="lazy" src="img/logo.svg" alt="Ecos del Pasado"></a></figure></div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Creado por Estudiantes de la UPTOS</p>
+                <p>Jesús Maiz, Jesús Garcia, Jesús Carrera, Miguel Pulido</p>
+                <p>Comunidad de San Francisco 1, Cumaná, estado Sucre</p>
+            </div>
+            <!-- Cuando la comunidad tenga redes sociales, agregar aquí sus enlaces reales -->
+            <div class="box">
+                <h2>EXPLORA</h2>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Lugares/castillo.html">Castillo San Antonio</a></li>
+                    <li><a href="Lugares/basilica.html">Basílica de Santa Inés</a></li>
+                    <li><a href="HechosRelatos/jose-ribero.html">Hechos y Relatos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="opiniones.html">Opiniones</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

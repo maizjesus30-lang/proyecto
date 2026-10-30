@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hechos y Relatos | Ecos del Pasado</title>
+    <meta name="description" content="Historias y relatos de la Comunidad de San Francisco, Cumaná.">
+    <meta name="theme-color" content="#1b365d">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header1">
+        <nav class="navs" aria-label="Principal">
+            <a class="logo" href="../index.html"><img class="logo-img" src="../img/logo.svg" alt="">Ecos del <span>Pasado</span></a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-links">
+                <li class="dropdown"><a href="../index.html">Inicio ▾</a>
+                    <ul class="submenu">
+                        <li><a href="../index.html#bienvenida">Bienvenida</a></li>
+                        <li><a href="../index.html#historia">Historia</a></li>
+                        <li><a href="../index.html#atractivos">Lugares</a></li>
+                        <li><a href="../index.html#personajes">Personajes</a></li>
+                        <li><a href="../index.html#ubicacion">Ubicación</a></li>
+                        <li><a href="../index.html#cultura">Cultura</a></li>
+                        <li><a href="../index.html#galeria">Galería</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Lugares ▾</a>
+                    <ul class="submenu">
+                        <li><a href="../Lugares/castillo.html">Castillo San Antonio</a></li>
+                        <li><a href="../Lugares/basilica.html">Basílica Menor de Santa Inés</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Hechos y Relatos ▾</a>
+                    <ul class="submenu">
+                        <li><a class="activo" href="../HechosRelatos/jose-ribero.html">José Ribero</a></li>
+                    </ul>
+                </li>
+                <li><a href="../servicios.html">Servicios</a></li>
+                <li><a href="../nosotros.html">Nosotros</a></li>
+                <li><a href="../opiniones.html">Opiniones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-pagina" style="background-image:linear-gradient(rgba(15,30,50,.75),rgba(2,2,2,.85)),url('../img/portada.jpg')">
+            <h1>Hechos y Relatos</h1>
+            <p>Historias que conmueven</p>
+        </section>
+        <section class="container-seccion">
+            <div class="grid-2-columnas alineacion-centro">
+                <div class="imagen-contenedor"><img src="../img/ribero.jpg" alt="José Ribero"></div>
+                <div class="texto-largo"><h2 style="color:var(--color-mar);margin-bottom:1rem">José Ribero</h2><p>Pedro José de Zavala y Bravo del Ribero fue un influyente aristócrata y militar limeño, reconocido como el VI marqués de San Lorenzo del Valleumbroso, cuya vida transcurrió en medio de las guerras de independencia. Como fiel defensor de la corona española, utilizó su fortuna personal para financiar tropas realistas, destacando la creación del Escuadrón del Rey para intentar frenar el avance independentista en el Perú. Su papel político fue decisivo en 1821, cuando participó activamente en el motín de Aznapuquio, el golpe de Estado que destituyó al virrey Pezuela para colocar en su lugar a José de la Serna, siendo el propio Zavala quien comunicó la noticia al virrey depuesto.</p></div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box"><figure><a href="../index.html"><img src="../img/logo.svg" alt="Ecos del Pasado"></a></figure></div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Creado por Estudiantes de la UPTOS</p>
+                <p>Jesús Maiz, Jesús Garcia, Jesús Carrera, Miguel Pulido</p>
+                <p>Comunidad de San Francisco 1, Cumaná, estado Sucre</p>
+            </div>
+            <!-- Cuando la comunidad tenga redes sociales, agregar aquí sus enlaces reales -->
+            <div class="box">
+                <h2>EXPLORA</h2>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Lugares/castillo.html">Castillo San Antonio</a></li>
+                    <li><a href="../Lugares/basilica.html">Basílica de Santa Inés</a></li>
+                    <li><a class="activo" href="../HechosRelatos/jose-ribero.html">Hechos y Relatos</a></li>
+                    <li><a href="../servicios.html">Servicios</a></li>
+                    <li><a href="../nosotros.html">Nosotros</a></li>
+                    <li><a href="../opiniones.html">Opiniones</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div id="modal-fullscreen" class="modal-full"><span id="cerrar-modal" class="cerrar">&times;</span><img class="imagen-expandida" id="foto-grande" src="" alt="Imagen ampliada"></div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

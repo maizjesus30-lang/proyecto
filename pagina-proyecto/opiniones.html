@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones | Ecos del Pasado</title>
+    <meta name="description" content="Deja tu opinión, sugerencia o recomendación para mejorar la página y la Comunidad de San Francisco 1.">
+    <meta name="theme-color" content="#1b365d">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header1">
+        <nav class="navs" aria-label="Principal">
+            <a class="logo" href="index.html"><img class="logo-img" src="img/logo.svg" alt="">Ecos del <span>Pasado</span></a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-links">
+                <li class="dropdown"><a href="index.html">Inicio ▾</a>
+                    <ul class="submenu">
+                        <li><a href="index.html#bienvenida">Bienvenida</a></li>
+                        <li><a href="index.html#historia">Historia</a></li>
+                        <li><a href="index.html#atractivos">Lugares</a></li>
+                        <li><a href="index.html#personajes">Personajes</a></li>
+                        <li><a href="index.html#ubicacion">Ubicación</a></li>
+                        <li><a href="index.html#cultura">Cultura</a></li>
+                        <li><a href="index.html#galeria">Galería</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Lugares ▾</a>
+                    <ul class="submenu">
+                        <li><a href="Lugares/castillo.html">Castillo San Antonio</a></li>
+                        <li><a href="Lugares/basilica.html">Basílica Menor de Santa Inés</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Hechos y Relatos ▾</a>
+                    <ul class="submenu">
+                        <li><a href="HechosRelatos/jose-ribero.html">José Ribero</a></li>
+                    </ul>
+                </li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a class="activo" href="opiniones.html">Opiniones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-pagina" style="background-image:linear-gradient(rgba(15,30,50,.75),rgba(2,2,2,.85)),url('img/portada4.jpg')">
+            <h1>Opiniones</h1>
+            <p>Tu voz ayuda a mejorar la página y la comunidad</p>
+        </section>
+        <section class="container-seccion">
+            <div class="header-seccion text-center"><h2>Cuéntanos qué piensas</h2><div class="linea-decorativa"></div>
+                <p class="subtitulo-seccion">Habitantes y visitantes son bienvenidos: dinos qué le falta a la página, qué podemos mejorar o qué recomendarías para la Comunidad de San Francisco 1.</p></div>
+            <form id="form-opinion" class="form-opinion">
+                <input type="hidden" name="subject" value="Nueva opinión - Ecos del Pasado">
+                <div class="campo-trampa" aria-hidden="true"><label>No llenar este campo<input type="text" name="web_site" tabindex="-1" autocomplete="off"></label></div>
+                <div class="campo"><label for="nombre">Tu nombre <small>(opcional)</small></label>
+                    <input type="text" id="nombre" name="nombre" maxlength="60" autocomplete="name"></div>
+                <div class="campo"><label for="perfil">Soy…</label>
+                    <select id="perfil" name="perfil" required>
+                        <option value="" disabled selected>Elige una opción</option>
+                        <option>Habitante de la comunidad</option>
+                        <option>Visitante o turista</option>
+                        <option>Otro</option>
+                    </select></div>
+                <div class="campo"><label for="tema">Mi opinión es sobre…</label>
+                    <select id="tema" name="tema" required>
+                        <option value="" disabled selected>Elige una opción</option>
+                        <option>Sugerencia para mejorar la página</option>
+                        <option>Recomendación para la comunidad</option>
+                        <option>Otro tema</option>
+                    </select></div>
+                <div class="campo"><label for="mensaje">Tu mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required minlength="10" maxlength="1000" placeholder="Escribe aquí tu opinión, sugerencia o recomendación…"></textarea>
+                    <span id="contador" class="contador">0 / 1000</span></div>
+                <div class="campo"><label for="contacto">Correo o WhatsApp <small>(opcional, solo si quieres que te respondamos)</small></label>
+                    <input type="text" id="contacto" name="contacto" maxlength="80"></div>
+                <p class="nota-privacidad">Tu nombre y tu contacto son opcionales. Tu opinión llega al equipo de la página, y solo publicaremos las que sean respetuosas y útiles para la comunidad.</p>
+                <button type="submit" id="btn-enviar" class="btn-primario btn-enviar">Enviar opinión</button>
+                <div id="estado-envio" class="estado-envio" role="status" aria-live="polite"></div>
+            </form>
+        </section>
+        <section id="opiniones-publicas" class="bg-claro" hidden>
+            <div class="container-seccion">
+                <div class="header-seccion text-center"><h2>Lo que nos han dicho</h2><div class="linea-decorativa"></div></div>
+                <div id="lista-opiniones" class="opiniones-grid"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box"><figure><a href="index.html"><img loading="lazy" src="img/logo.svg" alt="Ecos del Pasado"></a></figure></div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Creado por Estudiantes de la UPTOS</p>
+                <p>Jesús Maiz, Jesús Garcia, Jesús Carrera, Miguel Pulido</p>
+                <p>Comunidad de San Francisco 1, Cumaná, estado Sucre</p>
+            </div>
+            <!-- Cuando la comunidad tenga redes sociales, agregar aquí sus enlaces reales -->
+            <div class="box">
+                <h2>EXPLORA</h2>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Lugares/castillo.html">Castillo San Antonio</a></li>
+                    <li><a href="Lugares/basilica.html">Basílica de Santa Inés</a></li>
+                    <li><a href="HechosRelatos/jose-ribero.html">Hechos y Relatos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="opiniones.html">Opiniones</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/opiniones.js"></script>
+</body>
+</html>
